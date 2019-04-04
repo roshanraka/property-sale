@@ -1,29 +1,29 @@
-﻿Installing pre-requisites:
+﻿# Installing pre-requisites:
 
-(Reference: https://hyperledger.github.io/composer/latest/installing/installing-prereqs)
+   (Reference: https://hyperledger.github.io/composer/latest/installing/installing-prereqs)
 
-In the terminal window paste the text below and press enter:
+   In the terminal window paste the text below and press enter:
 
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
-	touch .bash_profile
+      touch .bash_profile
 
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+      curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
 
-	nvm install --lts
+      nvm install --lts
 
-	nvm use --lts
-
-
-Download docker from https://store.docker.com/editions/community/docker-ce-desktop-mac
-Install docker: https://docs.docker.com/docker-for-mac/install/
+      nvm use --lts
 
 
-Installing dev-environment: https://hyperledger.github.io/composer/latest/installing/development-tools
+   Download docker from https://store.docker.com/editions/community/docker-ce-desktop-mac
+   Install docker: https://docs.docker.com/docker-for-mac/install/
 
-Note that you should not use su or sudo for the following npm commands.
 
-Run the following commands in terminal
+# Installing dev-environment: https://hyperledger.github.io/composer/latest/installing/development-tools
+
+   Note that you should not use su or sudo for the following npm commands.
+
+* Run the following commands in terminal
 
     1. Essential CLI tools:
        npm install -g composer-cli@0.20
@@ -34,12 +34,12 @@ Run the following commands in terminal
     4. Yeoman is a tool for generating applications, which utilizes generator-hyperledger-composer:
        npm install -g yo
 
-Step 2: Install Playground
+* Step 2: Install Playground
 
     1. Browser app for simple editing and testing Business Networks:
        npm install -g composer-playground@0.20
-Step 3: Install Hyperledger Fabric
-This step gives you a local Hyperledger Fabric runtime to deploy your business networks to.
+* Step 3: Install Hyperledger Fabric
+   This step gives you a local Hyperledger Fabric runtime to deploy your business networks to.
     1. In a directory of your choice (we will assume ~/fabric-dev-servers), get the .tar.gz file that contains the tools to install Hyperledger Fabric:
        mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers
        
@@ -50,7 +50,7 @@ This step gives you a local Hyperledger Fabric runtime to deploy your business n
        export FABRIC_VERSION=hlfv12
        ./downloadFabric.sh
        
-Step 4: Start Hyperledger Fabric
+* Step 4: Start Hyperledger Fabric
     
     In terminal window run the following commands:
     
